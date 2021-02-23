@@ -51,5 +51,29 @@ $(document).ready(function () {
     });
   }
 
+
+  if ($(".add-image").length) {
+    $(".slider-top").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      dots: false,
+      asNavFor: ".slider-bottom",
+    });
+    $(".slider-bottom").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: ".slider-top",
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+    });
+  }
+
+  if ($(".example").length) {
+    $(".example").htmlNumberSpinner();
+  }
+
 });
 
