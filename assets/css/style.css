@@ -2096,6 +2096,14 @@ footer .footer-social li a {
   .company .company-img {
     margin-top: 20px;
   }
+
+  .contact-us .contact-us-form {
+    width: 100%;
+  }
+
+  .cart-page .cart-table .table-image img {
+    height: auto;
+  }
 }
 .header .header-slider .slider-item, .contact {
   background-size: cover;
