@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <!-- top header -->
   <div class="top-header">
     <div class="container">
@@ -139,85 +140,124 @@
         </div> -->
     </div>
   </nav>
+
   <div class="path"></div>
 
-  <div class="user-info">
+  <div class="cart-page">
     <div class="container">
+      <h5 class="section-header text-left">سلة الشراء</h5>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-9">
-          <div class="phones my-account-details">
-            <div class="card">
-              <div class="card-header">
-                <h6>بيانات المستخدم</h6>
-                <a href="" class="edit" data-toggle="modal" data-target="#edit-user">
-                  <i class="fas fa-pen"></i>
-                  <span>تعديل</span>
-                </a>
-              </div>
-              <div class="card-body">
-                <h6>اسم المستخدم</h6>
-                <h5 class="name">محمد عبد الوهاب عبد الرحمن</h5>
-                <ul class="list-unstyled mt-3">
-                  <li>
-                    <img src="./assets/images/phone.png" alt="">
-                    <span>
-                      <span class="phone-number">رقم الجوال</span>
-                      <p class="number">(081) 669-778-99</p>
-                    </span>
-                  </li>
-                  <li>
-                    <img src="./assets/images/place.png" alt="">
-                    <span>
-                      <span class="phone-number">عنوان التوصيل الافتراضي</span>
-                      <p class="number adress">الرياض طريق عثمان بن عفان الفرعي
-                        التعاون الرياض 1234</p>
-                    </span>
-                  </li>
-                </ul>
-                <form action="" class="mt-5">
-                  <h6>اضافة ملاحظات</h6>
-                  <textarea name="" id="" class="form-control"></textarea>
-                </form>
-              </div>
+          <div class="cart-table cart-table-by-step1">
+            <div class="table-responsive">
+              <table class="table table-image borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">المنتج</th>
+                    <th scope="col"></th>
+                    <th scope="col">الكمية</th>
+                    <th scope="col">سعر الوحدة</th>
+                    <th scope="col">السعر الاجمالي</th>
+                    <th scope="col">حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="img-w">
+                      <img src="./assets/images/new-added.png">
+                    </td>
+                    <td class="name">
+                      <h5>ثوم مستورد</h5>
+                      <p>الوحدة : كيلو</p>
+                    </td>
+                    <td>
+                      <div class="counter example" min="1" max="50" step="1"></div>
+                    </td>
+                    <td>45.00 ر.س</td>
+                    <td>90.00 ر.س</td>
+                    <td><a href="#" data-toggle="modal" data-target="#delete-product"><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td class="img-w">
+                      <img src="./assets/images/new-added.png">
+                    </td>
+                    <td class="name">
+                      <h5>ثوم مستورد</h5>
+                      <p>الوحدة : كيلو</p>
+                    </td>
+                    <td>
+                      <div class="counter example" min="1" max="50" step="1"></div>
+                    </td>
+                    <td>45.00 ر.س</td>
+                    <td>90.00 ر.س</td>
+                    <td><a href="#" data-toggle="modal" data-target="#delete-product"><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td class="img-w">
+                      <img src="./assets/images/new-added.png">
+                    </td>
+                    <td class="name">
+                      <h5>ثوم مستورد</h5>
+                      <p>الوحدة : كيلو</p>
+                    </td>
+                    <td>
+                      <div class="counter example" min="1" max="50" step="1"></div>
+                    </td>
+                    <td>45.00 ر.س</td>
+                    <td>90.00 ر.س</td>
+                    <td><a href="#" data-toggle="modal" data-target="#delete-product"><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td class="img-w">
+                      <img src="./assets/images/new-added.png">
+                    </td>
+                    <td class="name">
+                      <h5>ثوم مستورد</h5>
+                      <p>الوحدة : كيلو</p>
+                    </td>
+                    <td>
+                      <div class="counter example" min="1" max="50" step="1"></div>
+                    </td>
+                    <td>45.00 ر.س</td>
+                    <td>90.00 ر.س</td>
+                    <td><a href="#" data-toggle="modal" data-target="#delete-product"><i class="fas fa-trash-alt"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-3">
-          <div class="payment-page">
-            <div class="cart-page">
-              <div class="summarized">
-                <div class="card">
-                  <div class="card-header">
-                    <h5>ملخص الطلب</h5>
-                  </div>
-                  <div class="container">
-                    <div class="card-info">
-                      <h5>عدد المنتجات</h5>
-                      <span>4</span>
-                    </div>
-                    <div class="card-info">
-                      <h5>اجمالي الطلبات</h5>
-                      <span>55ر.س</span>
-                    </div>
-                    <div class="card-info">
-                      <h5>الخصم</h5>
-                      <span>0%</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="card-info">
-                      <h5>الاجمالي</h5>
-                      <span>55ر.س</span>
-                    </div>
-                  </div>
+          <div class="summarized">
+            <div class="card">
+              <div class="card-header">
+                <h5>ملخص الطلب</h5>
+              </div>
+              <div class="container">
+                <div class="card-info">
+                  <h5>عدد المنتجات</h5>
+                  <span>4</span>
+                </div>
+                <div class="card-info">
+                  <h5>اجمالي الطلبات</h5>
+                  <span>55ر.س</span>
+                </div>
+                <div class="card-info">
+                  <h5>الخصم</h5>
+                  <span>0%</span>
                 </div>
               </div>
-              <div class="complete-buy">
-                <a href="" class="btn btn-block"> إتمام الشراء</a>
+              <div class="card-footer">
+                <div class="card-info">
+                  <h5>الاجمالي</h5>
+                  <span>55ر.س</span>
+                </div>
               </div>
             </div>
+            <div class="complete-buy">
+              <a href="" class="btn btn-block">إتمام الشراء</a>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -251,47 +291,21 @@
   </footer>
 
 
-  <!-- account-info-modal -->
-  <div class="modal fade" id="edit-user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+  <!-- Modals -->
+  <div class="modal fade" id="delete-product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
         <div class="modal-body">
-          <h5 class="card-title">تعديل البيانات الشخصية</h5>
-          <form action="">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="form-group">
-                  <label for="">الاسم</label>
-                  <input type="text" name="" id="" class="form-control" placeholder="الاسم">
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="form-group">
-                  <label for="">الايميل</label>
-                  <input type="email" name="" id="" class="form-control" placeholder="الايميل">
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="form-group">
-                  <label for="">العنوان</label>
-                  <input type="text" name="" id="" class="form-control" placeholder="العنوان">
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer text-center">
-          <button type="submit" class="btn" style="background-color: #68b83b; color: #fff;">حفظ</button>
+          <i class="fas fa-ban"></i>
+          <h5>هل تريد الحدف بالتاكيد</h5>
+          <a href="" class="btn">نعم</a>
         </div>
       </div>
     </div>
   </div>
+
 
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>

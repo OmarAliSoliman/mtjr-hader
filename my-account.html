@@ -175,7 +175,7 @@
                     <div class="card">
                       <div class="card-header">
                         <h6>تفاصيل الحساب</h6>
-                        <a href="" class="edit">
+                        <a href="" class="edit" data-toggle="modal" data-target="#edit-user">
                           <i class="fas fa-pen"></i>
                           <span>تعديل</span>
                         </a>
@@ -183,7 +183,7 @@
                       <div class="card-body">
                         <h5 class="name">محمد عبد الوهاب عبد الرحمن</h5>
                         <h6 class="email">diana.foster@mail.com</h6>
-                        <a href="" class="change-pass">
+                        <a href="" class="change-pass" data-toggle="modal" data-target="#change-pass">
                           <img src="./assets/images/change-pass.png" alt="">
                           <span>تغيير كلمة المرور</span>
                         </a>
@@ -197,7 +197,7 @@
                     <div class="card">
                       <div class="card-header">
                         <h6>جهات الاتصال</h6>
-                        <a href="" class="edit">
+                        <a href="" class="edit" data-toggle="modal" data-target="#edit-contact-info">
                           <i class="fas fa-pen"></i>
                           <span>تعديل</span>
                         </a>
@@ -234,231 +234,90 @@
               <h5 class="tab-header">
                 طلباتي
               </h5>
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="in-wait-tab" data-toggle="tab" href="#in-wait" role="tab"
-                    aria-controls="in-wait" aria-selected="true">في الانتظار</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="arrive-waiting-tab" data-toggle="tab" href="#arrive-waiting" role="tab"
-                    aria-controls="arrive-waiting" aria-selected="false">جاري التوصيل</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="arrive-done-tab" data-toggle="tab" href="#arrive-done" role="tab"
-                    aria-controls="arrive-done" aria-selected="false">تم التوصيل</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="canseling-tab" data-toggle="tab" href="#canseling" role="tab"
-                    aria-controls="canseling" aria-selected="false">تم الالغاء</a>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="in-wait" role="tabpanel" aria-labelledby="in-wait-tab">
-                  <div class="in-wait-card">
-                    <div class="card">
-                      <h5 class="card-number">#15446464</h5>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">عدد المنتجات</span> <span class="answer">2</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اسم المتجر</span> <span class="answer">اسم المتجر هنا </span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">حالة الطلب</span> <span class="answer" style="color: #68b83b;">الانتظار
-                            لتاكيد الدفع</span>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="order-details">
-                        <h5>تفاصيل الطلب</h5>
-                        <div class="buttons">
-                          <a href="" class="btn btn-cancel">الغاء الطلب</a>
-                          <a href="" class="btn btn-compish">ارسال شكوى</a>
-                        </div>
-                      </div>
+              <div class="my-orders-card">
+                <div class="card">
+                  <h5 class="card-number">#15446464</h5>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">عدد المنتجات</span> <span class="answer">2</span>
                     </div>
-                    <div class="card">
-                      <h5 class="card-number">#15446464</h5>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">عدد المنتجات</span> <span class="answer">2</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اسم المتجر</span> <span class="answer">اسم المتجر هنا </span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">حالة الطلب</span> <span class="answer" style="color: #68b83b;">الانتظار
-                            لتاكيد الدفع</span>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="order-details">
-                        <h5>تفاصيل الطلب</h5>
-                        <div class="buttons">
-                          <a href="" class="btn btn-cancel">الغاء الطلب</a>
-                          <a href="" class="btn btn-compish">ارسال شكوى</a>
-                        </div>
-                      </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
                     </div>
-                    <div class="card">
-                      <h5 class="card-number">#15446464</h5>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">عدد المنتجات</span> <span class="answer">2</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اسم المتجر</span> <span class="answer">اسم المتجر هنا </span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">حالة الطلب</span> <span class="answer" style="color: #68b83b;">الانتظار
-                            لتاكيد الدفع</span>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="order-details">
-                        <h5>تفاصيل الطلب</h5>
-                        <div class="buttons">
-                          <a href="" class="btn btn-cancel">الغاء الطلب</a>
-                          <a href="" class="btn btn-compish">ارسال شكوى</a>
-                        </div>
-                      </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12">
+                      <span class="question">عنوان التوصيل</span> <span class="answer">الرياض طريق عثمان بن عفان الفرعي
+                        التعاون الرياض 1234</span>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="arrive-waiting" role="tabpanel" aria-labelledby="arrive-waiting-tab">جاري
-                  التوصيل</div>
-                <div class="tab-pane fade" id="arrive-done" role="tabpanel" aria-labelledby="arrive-done-tab">
-                  <div class="in-wait-card">
-                    <div class="card">
-                      <h5 class="card-number">#15446464</h5>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">عدد المنتجات</span> <span class="answer">2</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اسم المتجر</span> <span class="answer">اسم المتجر هنا </span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">حالة الطلب</span> <span class="answer" style="color: #68b83b;">الانتظار
-                            لتاكيد الدفع</span>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="order-details">
-                        <h5>تفاصيل الطلب</h5>
-                        <div class="buttons">
-                          <a href="" class="btn btn-market-rate">تقييم المتجر</a>
-                          <a href="" class="btn btn-mandop-rate">تقييم المندوب</a>
-                          <a href="" class="btn btn-compish">ارسال شكوى</a>
-                        </div>
-                      </div>
+                <div class="card">
+                  <h5 class="card-number">#15446464</h5>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">عدد المنتجات</span> <span class="answer">2</span>
                     </div>
-                    <div class="card">
-                      <h5 class="card-number">#15446464</h5>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">عدد المنتجات</span> <span class="answer">2</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اسم المتجر</span> <span class="answer">اسم المتجر هنا </span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">حالة الطلب</span> <span class="answer" style="color: #68b83b;">الانتظار
-                            لتاكيد الدفع</span>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="order-details">
-                        <h5>تفاصيل الطلب</h5>
-                        <div class="buttons">
-                          <a href="" class="btn btn-market-rate">تقييم المتجر</a>
-                          <a href="" class="btn btn-mandop-rate">تقييم المندوب</a>
-                          <a href="" class="btn btn-compish">ارسال شكوى</a>
-                        </div>
-                      </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
                     </div>
-                    <div class="card">
-                      <h5 class="card-number">#15446464</h5>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">عدد المنتجات</span> <span class="answer">2</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">اسم المتجر</span> <span class="answer">اسم المتجر هنا </span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                          <span class="question">حالة الطلب</span> <span class="answer" style="color: #68b83b;">الانتظار
-                            لتاكيد الدفع</span>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="order-details">
-                        <h5>تفاصيل الطلب</h5>
-                        <div class="buttons">
-                          <a href="" class="btn btn-market-rate">تقييم المتجر</a>
-                          <a href="" class="btn btn-mandop-rate">تقييم المندوب</a>
-                          <a href="" class="btn btn-compish">ارسال شكوى</a>
-                        </div>
-                      </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12">
+                      <span class="question">عنوان التوصيل</span> <span class="answer">الرياض طريق عثمان بن عفان الفرعي
+                        التعاون الرياض 1234</span>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="canseling" role="tabpanel" aria-labelledby="canseling-tab">تم الالغاء
+                <div class="card">
+                  <h5 class="card-number">#15446464</h5>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">عدد المنتجات</span> <span class="answer">2</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12">
+                      <span class="question">عنوان التوصيل</span> <span class="answer">الرياض طريق عثمان بن عفان الفرعي
+                        التعاون الرياض 1234</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <h5 class="card-number">#15446464</h5>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">عدد المنتجات</span> <span class="answer">2</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">اجمالي الطلب</span> <span class="answer">250ر.س</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">تاريخ الطلب</span> <span class="answer">22/12/2020</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <span class="question">طريفة الدفع</span> <span class="answer">حوالة بنكية</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12">
+                      <span class="question">عنوان التوصيل</span> <span class="answer">الرياض طريق عثمان بن عفان الفرعي
+                        التعاون الرياض 1234</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -494,6 +353,127 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- account-info-modal -->
+  <div class="modal fade" id="edit-user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="card-title">تعديل البيانات الشخصية</h5>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">الاسم</label>
+                  <input type="text" name="" id="" class="form-control" placeholder="الاسم">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">الايميل</label>
+                  <input type="email" name="" id="" class="form-control" placeholder="الايميل">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">العنوان</label>
+                  <input type="text" name="" id="" class="form-control" placeholder="العنوان">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="submit" class="btn" style="background-color: #68b83b; color: #fff;">حفظ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- password-modal -->
+  <div class="modal fade" id="change-pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="card-title">تعديل كلمة المرور</h5>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">كلمة السر القديمة</label>
+                  <input type="password" name="" id="" class="form-control" placeholder="كلمة السر القديمة">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">كلمة السر الجديدة</label>
+                  <input type="password" name="" id="" class="form-control" placeholder="كلمة السر الجديدة">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">تاكيد كلمة السر</label>
+                  <input type="password" name="" id="" class="form-control" placeholder="تاكيد كلمة السر">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="submit" class="btn" style="background-color: #68b83b; color: #fff;">حفظ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact-info-modal -->
+  <div class="modal fade" id="edit-contact-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="card-title">تعديل جهات الاتصال</h5>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">رقم الهاتف</label>
+                  <input type="text" name="" id="" class="form-control" placeholder="رقم الهاتف">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label for="">عنوان التوصيل الافتراضي</label>
+                  <input type="email" name="" id="" class="form-control" placeholder="عنوان التوصيل الافتراضي">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="submit" class="btn" style="background-color: #68b83b; color: #fff;">حفظ</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>

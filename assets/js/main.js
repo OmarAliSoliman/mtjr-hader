@@ -75,5 +75,20 @@ $(document).ready(function () {
     $(".example").htmlNumberSpinner();
   }
 
+
+  if (
+    typeof window.location.hash != "undefined" &&
+    window.location.hash == "#my-account"
+  ) {
+    $("#v-pills-home-tab").click();
+  }
+
+  if (
+    typeof window.location.hash != "undefined" &&
+    window.location.hash == "#fav-product"
+  ) {
+    $("#v-pills-settings-tab").click();
+  }
+
 });
 

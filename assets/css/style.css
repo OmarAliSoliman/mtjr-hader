@@ -711,15 +711,30 @@ img {
 
 .department-page .card-product {
   margin-top: 30px;
+  height: 350px;
 }
 .department-page .card-product .card-img {
   background-color: #f1f1f1;
   text-align: center;
   padding: 15px 0 15px 0;
+  height: 200px;
+  position: relative;
 }
-.department-page .card-product .card-img img {
-  width: auto;
-  height: auto;
+.department-page .card-product .card-img .dis-img {
+  width: 57.28px;
+  height: 58.66px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.department-page .card-product .card-img-parent {
+  max-width: 162px;
+  max-height: 170px;
+  margin: auto;
+}
+.department-page .card-product .card-img-parent img {
+  width: 100%;
+  height: 100%;
 }
 .department-page .card-product .card-body .card-title {
   display: block;
@@ -1175,7 +1190,7 @@ img {
   top: 50%;
   transform: translate(-5%, -50%);
   font-size: 14px;
-  color: #214c5e !important;
+  color: #7cb14a !important;
   text-decoration: none;
 }
 .user-info .my-account-details .card .card-body {
@@ -1196,7 +1211,7 @@ img {
   margin-bottom: 25px;
 }
 .user-info .my-account-details .card .card-body .change-pass {
-  color: #214c5e;
+  color: #7cb14a;
   text-decoration: none;
 }
 .user-info .my-account-details .card .card-body .change-pass::after {
@@ -1312,7 +1327,7 @@ img {
   top: 50%;
   transform: translate(-5%, -50%);
   font-size: 14px;
-  color: #214c5e !important;
+  color: #7cb14a !important;
   text-decoration: none;
 }
 .account .my-account-tabs #my-account .my-account-details .card .card-body .name {
@@ -1328,7 +1343,7 @@ img {
   margin-bottom: 25px;
 }
 .account .my-account-tabs #my-account .my-account-details .card .card-body .change-pass {
-  color: #214c5e;
+  color: #7cb14a;
   text-decoration: none;
 }
 .account .my-account-tabs #my-account .my-account-details .card .card-body .change-pass::after {
@@ -1377,51 +1392,39 @@ img {
   transform: translate(0, -50%);
   font-weight: bold;
 }
-.account .my-account-tabs #fav-product .nav-tabs .nav-link {
-  border: 0;
-  color: #9f9f9f;
-}
-.account .my-account-tabs #fav-product .nav-tabs .active {
-  border-bottom: 2px solid #214c5e;
-  color: #214c5e;
-  font-weight: bold;
-}
-.account .my-account-tabs #fav-product .tab-content {
-  margin-top: 30px;
-}
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card {
+.account .my-account-tabs #fav-product .my-orders-card .card {
   padding: 20px;
   background-color: #fcfcfc;
   margin-bottom: 20px;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .col-lg-4 {
+.account .my-account-tabs #fav-product .my-orders-card .card .col-lg-3 {
   margin-bottom: 10px;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .card-number {
-  color: #214c5e;
+.account .my-account-tabs #fav-product .my-orders-card .card .card-number {
+  color: #7cb14a;
   margin: 0;
   margin-bottom: 10px;
   font-size: 15px;
+  font-weight: bold;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .question {
+.account .my-account-tabs #fav-product .my-orders-card .card .question {
   font-size: 14px;
   color: #9f9f9f;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .answer {
+.account .my-account-tabs #fav-product .my-orders-card .card .answer {
   margin-right: 10px;
-  font-weight: bold;
   font-size: 14px;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details {
+.account .my-account-tabs #fav-product .my-orders-card .card .order-details {
   position: relative;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details h5 {
+.account .my-account-tabs #fav-product .my-orders-card .card .order-details h5 {
   font-size: 14px;
   color: #9f9f9f;
   position: relative;
   padding-right: 10px;
 }
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details h5::before {
+.account .my-account-tabs #fav-product .my-orders-card .card .order-details h5::before {
   content: "";
   color: #9f9f9f;
   font-size: 14px;
@@ -1429,36 +1432,6 @@ img {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-}
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details .buttons {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details .buttons .btn {
-  font-size: 14px;
-  margin-right: 5px;
-}
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details .buttons .btn-cancel {
-  border: 1px solid red;
-  color: red;
-  border-radius: 26px;
-}
-.account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details .buttons .btn-compish {
-  border: 1px solid #ff8300;
-  color: #ff8300;
-  border-radius: 26px;
-}
-.account .my-account-tabs #fav-product .tab-content #arrive-done .in-wait-card .btn-market-rate {
-  border: 1px solid #525252;
-  color: #525252;
-  border-radius: 26px;
-}
-.account .my-account-tabs #fav-product .tab-content #arrive-done .in-wait-card .btn-mandop-rate {
-  border: 1px solid #214c5e;
-  color: #214c5e;
-  border-radius: 26px;
 }
 .account .my-account-tabs #comment-rate .complish-order-cards .tab-header {
   font-size: 24px;
@@ -1547,6 +1520,97 @@ img {
   border: 1px solid #214c5e;
   color: #214c5e;
   border-radius: 26px;
+}
+
+.new-product .card-img {
+  position: relative;
+}
+.new-product .new-tragger {
+  background-color: #FEA100;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  z-index: 9;
+  width: 63px;
+  padding: 2px;
+  text-align: center;
+  top: 10px;
+  right: 10px;
+}
+
+.card-order-details {
+  border: 0 !important;
+  margin-top: 50px;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  padding: 0 !important;
+  background-color: #fff;
+}
+.card-order-details .card-header {
+  background-color: #fff;
+  padding: 25px !important;
+  border-bottom: 1px solid #DDD;
+}
+.card-order-details .card-header span span {
+  color: #7cb14a;
+}
+.card-order-details .card-body .card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 0;
+}
+.card-order-details .card-body .card .col-lg-3 {
+  margin-bottom: 10px;
+}
+.card-order-details .card-body .card .card-number {
+  color: #7cb14a;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.card-order-details .card-body .card .question {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.card-order-details .card-body .card .answer {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.card-order-details .card-body .card .order-details {
+  position: relative;
+}
+.card-order-details .card-body .card .order-details h5 {
+  font-size: 14px;
+  color: #9f9f9f;
+  position: relative;
+  padding-right: 10px;
+}
+.card-order-details .card-body .card .order-details h5::before {
+  content: "";
+  color: #9f9f9f;
+  font-size: 14px;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.card-order-details .card-body .cart-page {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.card-order-details .card-body .cart-page .cart-table {
+  box-shadow: none;
+}
+.card-order-details .card-body .cart-page .cart-table .btn {
+  background-color: #7cb14a;
+  width: 100%;
+}
+.card-order-details .card-body .cart-page .cart-table .btn:hover {
+  background-color: #fff;
+  border: 1px solid #7cb14a;
+  color: #7cb14a;
 }
 
 .contact-us {
@@ -1647,12 +1711,286 @@ img {
   background-color: #007ab9;
 }
 
+.who-par {
+  margin-bottom: 70px;
+}
+.who-par p {
+  color: #797979;
+  font-size: 14px;
+  margin-bottom: 54px;
+  line-height: 35px;
+}
+
+.cart-page {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.cart-page .section-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.cart-page .borderless td,
+.cart-page .borderless th {
+  border: none;
+}
+.cart-page .cart-table {
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+.cart-page .cart-table .table-image {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+.cart-page .cart-table .table-image .img-w {
+  width: 86px;
+  height: 81px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+.cart-page .cart-table .table-image th {
+  font-weight: normal;
+  padding-bottom: 20px;
+  color: #b1b1b1;
+  border-bottom: 1px solid #b9b8b863;
+  padding-top: 0;
+}
+.cart-page .cart-table .table-image td,
+.cart-page .cart-table .table-image th {
+  vertical-align: middle;
+}
+.cart-page .cart-table .table-image td {
+  color: #214c5e;
+}
+.cart-page .cart-table .table-image img {
+  width: 70px;
+  height: 45px;
+}
+.cart-page .cart-table .table-image .name h5 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.cart-page .cart-table .table-image .name p {
+  color: #b1b1b1;
+  font-size: 14px;
+}
+.cart-page .cart-table .no-border td {
+  border: 0;
+}
+.cart-page .cart-table .btn {
+  background-color: #214c5e;
+  color: #fff;
+}
+.cart-page .cart-table i {
+  color: #f00;
+}
+.cart-page .cart-table-by-step1 .counter {
+  width: 125px;
+  margin-bottom: 10px !important;
+}
+.cart-page .cart-table-by-step1 .number-input {
+  line-height: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  border: 0 !important;
+}
+.cart-page .cart-table-by-step1 .decrementer {
+  background-color: #7cb14a !important;
+  color: #fff !important;
+  line-height: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  border: 0 !important;
+  border-radius: 50%;
+  padding: 0 !important;
+}
+.cart-page .cart-table-by-step1 .incrementer {
+  display: inline-block;
+  padding: 0 !important;
+  line-height: 24px !important;
+  border: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #7cb14a !important;
+  color: #fff !important;
+  border: 0;
+}
+.cart-page .copon .card {
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border: 0;
+  padding-right: 40px;
+}
+.cart-page .copon .card .card-img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.cart-page .copon .card .card-img img {
+  width: auto;
+  height: auto;
+}
+.cart-page .copon .card .card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+.cart-page .copon .card .card-link {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 1px solid #214c5e;
+  color: #214c5e;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 26px;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+.cart-page .copon .card .card-link i {
+  font-size: 12px;
+}
+.cart-page .summarized .card {
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.cart-page .summarized .card .card-header {
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 0;
+  height: 40px;
+  background-color: #fff8f0;
+}
+.cart-page .summarized .card .card-header h5 {
+  color: #68b83b;
+  font-size: 15px;
+  font-weight: bold;
+}
+.cart-page .summarized .card .card-info {
+  margin-top: 20px;
+  position: relative;
+}
+.cart-page .summarized .card .card-info h5 {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.cart-page .summarized .card .card-info span {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10px;
+  font-weight: bold;
+}
+.cart-page .summarized .card .card-footer {
+  margin-top: 30px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 0;
+}
+.cart-page .summarized .card .card-footer h5 {
+  font-size: 20px;
+}
+.cart-page .summarized .complete-buy {
+  margin-top: 10px;
+}
+.cart-page .summarized .complete-buy .btn {
+  background-color: #7cb14a;
+  color: #fff;
+  border-radius: 6px;
+  height: 50px;
+  line-height: 40px;
+}
+
+.done {
+  text-align: center;
+  margin-top: 112px;
+  margin-bottom: 100px;
+}
+.done img {
+  width: 140px;
+  height: 175px;
+  margin-bottom: 32px;
+}
+.done h5 {
+  font-weight: bold;
+  font-size: 23px;
+}
+.done p {
+  font-size: 14px;
+  width: 60%;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 50px;
+}
+.done .btn {
+  color: #fff;
+  background-color: #fff;
+  background-color: #7cb14a;
+  width: 200px;
+  height: 50px;
+  line-height: 35px;
+  border-radius: 26px;
+}
+.done .btn:hover {
+  background-color: transparent;
+  border: 1px solid #7cb14a;
+  color: #7cb14a;
+}
+
 .fa-star {
   color: #a5a1a1;
 }
 
 .active-statr {
   color: #ffce42;
+}
+
+#delete-product .modal-body {
+  text-align: center;
+  padding-top: 30px;
+}
+#delete-product .modal-body i {
+  font-size: 35px;
+  color: #214c5e;
+}
+#delete-product .modal-body h5 {
+  color: #262b40;
+  margin-top: 10px;
+}
+#delete-product .modal-body .btn {
+  background-color: #7cb14a;
+  color: #fff;
+  width: 120px;
+  margin-top: 20px;
+}
+
+#edit-user .modal-content, #change-pass .modal-content, #edit-contact-info .modal-content {
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+#edit-user .modal-content .modal-body h5, #change-pass .modal-content .modal-body h5, #edit-contact-info .modal-content .modal-body h5 {
+  text-align: center;
+  font-size: 25px;
+}
+#edit-user .modal-content .modal-body .form-control, #change-pass .modal-content .modal-body .form-control, #edit-contact-info .modal-content .modal-body .form-control {
+  height: 50px;
 }
 
 footer {
@@ -1764,19 +2102,19 @@ footer .footer-social li a {
   background-position: center;
 }
 
-.header .header-slider .slick-arrow::before, .services .services-slider .slick-prev::before, .services .services-slider .slick-next::before, .account .my-account-tabs #fav-product .tab-content .in-wait-card .card .order-details h5::before, .account .my-account-tabs #comment-rate .complish-order-cards .complich-card .order-details h5::before {
+.header .header-slider .slick-arrow::before, .services .services-slider .slick-prev::before, .services .services-slider .slick-next::before, .account .my-account-tabs #fav-product .my-orders-card .card .order-details h5::before, .account .my-account-tabs #comment-rate .complish-order-cards .complich-card .order-details h5::before, .card-order-details .card-body .card .order-details h5::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;
 }
 
-.account .my-account-tabs #my-account, .account .my-account-tabs #fav-product, .account .my-account-tabs #comment-rate {
+.account .my-account-tabs #my-account, .account .my-account-tabs #fav-product, .account .my-account-tabs #comment-rate, .card-order-details {
   border: 0;
   border-radius: 6px;
   padding: 34px 40px 40px 40px;
 }
 
-.user-info .my-account-details .card, .account .my-account-tabs #my-account .my-account-details .card, .account .my-account-tabs #fav-product .card {
+.user-info .my-account-details .card, .account .my-account-tabs #my-account .my-account-details .card, .account .my-account-tabs #fav-product .card, .card-order-details {
   border: 1px solid #dfdfdf;
   border-radius: 6px;
 }
