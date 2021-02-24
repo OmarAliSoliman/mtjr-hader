@@ -2117,6 +2117,17 @@ footer .footer-social li a {
     right: 0;
   }
 }
+.our-services {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.our-services .card-serv {
+  margin-bottom: 20px;
+}
+.our-services .card-serv img {
+  max-height: 421px;
+}
+
 .header .header-slider .slider-item, .contact {
   background-size: cover;
   background-position: center;

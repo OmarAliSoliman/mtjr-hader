@@ -2438,6 +2438,17 @@ footer {
   }
 }
 
+.our-services{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  .card-serv{
+    margin-bottom: 20px;
+    img{
+      max-height: 421px;
+    }
+  }
+}
+
 %imgAsBackGround {
   background-size: cover;
   background-position: center;
