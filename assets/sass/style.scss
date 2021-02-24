@@ -502,7 +502,15 @@ img {
 .contact {
   height: 596px;
   @extend %imgAsBackGround;
-  padding-top: 116px;
+  // padding-top: 116px;
+  position: relative;
+  iframe{
+    width: 100%;
+  }
+  .contact-form{
+    position: absolute;
+    top: 116px;
+  }
   .card {
     width: 445px;
     padding: 30px;
@@ -2423,6 +2431,10 @@ footer {
   }
   .cart-page .cart-table .table-image img{
     height: auto;
+  }
+  .contact .contact-form{
+    left: 0;
+    right: 0;
   }
 }
 

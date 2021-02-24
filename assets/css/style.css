@@ -425,7 +425,14 @@ img {
 
 .contact {
   height: 596px;
-  padding-top: 116px;
+  position: relative;
+}
+.contact iframe {
+  width: 100%;
+}
+.contact .contact-form {
+  position: absolute;
+  top: 116px;
 }
 .contact .card {
   width: 445px;
@@ -2103,6 +2110,11 @@ footer .footer-social li a {
 
   .cart-page .cart-table .table-image img {
     height: auto;
+  }
+
+  .contact .contact-form {
+    left: 0;
+    right: 0;
   }
 }
 .header .header-slider .slider-item, .contact {
